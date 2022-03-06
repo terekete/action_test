@@ -13,4 +13,9 @@ jobs:
           who-to-greet: Davis
       - name: log_greet_time
         run: echo "${{ steps.greet.outputs.time }}"
-
+      - name: list_files
+        uses: |
+          pwd
+          ls- la
+      - name: checkout
+        uses: actions/checkout@v2
