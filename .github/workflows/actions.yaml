@@ -20,3 +20,8 @@ jobs:
         run: |
           pwd
           ls -la
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKPSPACE
+          echo "${{ github.token }}"
+
