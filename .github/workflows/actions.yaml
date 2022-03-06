@@ -15,10 +15,5 @@ jobs:
         uses: actions/hello-world-javascript-action@v1
         with:
           who-to-greet: Davis
-      - name: log_greet_time
-        run: echo "${{ steps.greet.outputs.time }}"
-      - name: list_files
-        uses: |
-          pwd
-          ls- la
+
  
