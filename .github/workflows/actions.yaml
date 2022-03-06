@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: simple_js_action
         id: greet
-        uses: actions/hello-world-javascript-action@v1
+        uses: actions/hello-world-javascript-action@main
         with:
           who-to-greet: Davis
       - name: log_greet_time
@@ -19,3 +19,4 @@ jobs:
           ls- la
       - name: checkout
         uses: actions/checkout@v2
+ 
