@@ -6,9 +6,11 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@main
       - name: simple_js_action
         id: greet
-        uses: actions/hello-world-javascript-action@main
+        uses: actions/hello-world-javascript-action@v1
         with:
           who-to-greet: Davis
       - name: log_greet_time
@@ -17,6 +19,4 @@ jobs:
         uses: |
           pwd
           ls- la
-      - name: checkout
-        uses: actions/checkout@v2
  
