@@ -13,6 +13,7 @@ jobs:
           path: main
   run-github-actions:
     runs-on: ubuntu-latest
+    needs: ["checkout"]
     steps:
       - name: simple_js_action
         id: greet
@@ -20,7 +21,6 @@ jobs:
         with:
           who-to-greet: Davis
       - name: list_files
-        needs: ["checkout"]
         run: |
           pwd
           ls- la
