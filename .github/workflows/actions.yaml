@@ -16,7 +16,7 @@ jobs:
         with:
           who-to-greet: Davis
       - name: list_files
+        needs: ["checkout"]
         run: |
           pwd
           ls- la
- 
