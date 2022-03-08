@@ -1,5 +1,6 @@
-name: Container
-on: push
+name: container
+
+on: [push]
 
 jobs:
   node-docker:
